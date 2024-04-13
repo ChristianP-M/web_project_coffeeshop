@@ -1,3 +1,11 @@
+/* colores a usar 
+#ffffff Blanco (fondo del encabezado, color de contraste de la fuente)
+#000000 (color de la fuente principal)
+#2f80ed (acento, botón)
+#838383 (bordes de los campos de entrada y marcadores de posición)
+#6F6F6F (horarios y dirección)
+#0A2850 (sección de recetas y fondo) */
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -7,4 +15,121 @@
   /* font-family: "Noto Seif", "Times New Roman", serif; */
   font-size: 16px;
   line-height: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #ffffff;
+  background-image: url("../images/background_header.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  min-height: 720px;
+  max-height: 800px;
+  height: 100vh;
+}
+
+.nav {
+  display: flex;
+}
+
+.logo {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  width: 150px;
+  height: 39px;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-right: 80px;
+}
+
+.nav__link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header__title {
+  max-width: 709px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: -1px;
+  margin-top: 183px;
+  margin-bottom: 0;
+  margin-left: 80px;
+}
+
+.header__span-accent {
+  font-family: "Noto Serif";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 72px;
+  color: #2f80ed;
+  display: block;
+}
+
+.header__description {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 683px;
+  margin-top: 28px;
+  margin-bottom: 0;
+  margin-left: 80px;
+}
+
+.header__image {
+  position: absolute;
+  top: 124px;
+  right: 5px;
+  width: 646px;
+  height: 568px;
+}
+
+.header__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.header__paragraph {
+  position: absolute;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
+  margin: 0;
+}
+
+.header__paragraph_position_left {
+  bottom: 40px;
+  left: 80px;
+}
+
+.header__paragraph_position_right {
+  bottom: 40px;
+  right: 40px;
 }
