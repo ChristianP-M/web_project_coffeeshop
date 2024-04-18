@@ -77,16 +77,16 @@
           class="header__image"
         />
         <div class="header__footer">
-          <p class="header__paragraph header__paragraph_position_left">
-            Horario:
-          </p>
-          <p class="header__paragraph header__paragraph_position_left">
-            Lunes a Viernes (de 10:00h a 19:00h)
-          </p>
-          <p class="header__paragraph header__paragraph_position_left">
-            Sábado y Domingos (de 11:00h a 18:00h)
-          </p>
-          <p class="header__paragraph header__paragraph_position_right">
+          <div class="header__schedule">
+            <p class="header__paragraph">Horario:</p>
+            <p class="header__paragraph">
+              Lunes a Viernes (de 10:00h a 19:00h)
+            </p>
+            <p class="header__paragraph">
+              Sábado y Domingos (de 11:00h a 18:00h)
+            </p>
+          </div>
+          <p class="header__paragraph .header__paragraph_position_right">
             Avenida del Éxito 200, Ciudad Triple Peaks
           </p>
         </div>
@@ -128,7 +128,69 @@
             </div>
           </div>
         </section>
-        <section class="reservation" id="reservation"></section>
+        <section class="reservation" id="reservation">
+          <p class="reservation__title">Reservar una mesa</p>
+          <form class="reservation__form">
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="nombre">Nombre *</label>
+              <input
+                type="text"
+                class="form__input"
+                id="nombre"
+                name="nombre"
+                placeholder="Nombre"
+                required
+              />
+              <label class="form__label" for="comensales"
+                >Número de comensales *</label
+              >
+              <input
+                type="number"
+                class="form__input"
+                id="comensales"
+                name="comensales"
+                min="1"
+                max="8"
+                placeholder="1-8"
+                required
+              />
+              <label class="form__label" for="date">Fecha y hora *</label>
+              <input
+                type="datetime-local"
+                class="form__input"
+                id="date"
+                name="name"
+                required
+              />
+              <label class="form__label" for="email"
+                >Tu correo electrónico *</label
+              >
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                name="name"
+                placeholder="email@email.com"
+                required
+              />
+            </fieldset>
+
+            <button type="submit" class="form__button">
+              Reservar una mesa
+            </button>
+
+            <label class="form__label form__label_position_center" for="terms">
+              <input
+                type="checkbox"
+                class="form__checkbox"
+                id="terms"
+                name="terms"
+                required
+              />
+              Acepto los términos de uso
+            </label>
+          </form>
+        </section>
       </main>
       <footer class="footer"></footer>
     </div>

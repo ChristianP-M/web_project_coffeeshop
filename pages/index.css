@@ -105,13 +105,17 @@
 
 .header__footer {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   margin-top: auto;
+  margin: auto 80px 40px;
+}
+
+.header__schedule {
+  display: flex;
+  flex-direction: column;
 }
 
 .header__paragraph {
-  position: absolute;
   font-family: "Inter", "Arial", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -120,14 +124,13 @@
   margin: 0;
 }
 
-.header__paragraph_position_left {
+/* .header__paragraph_position_left {
   bottom: 40px;
   left: 80px;
-}
+} */
 
 .header__paragraph_position_right {
-  bottom: 40px;
-  right: 40px;
+  align-self: end;
 }
 
 /* Aqui empieza la nueva seccion de MAIN 
@@ -191,4 +194,102 @@ a su vez, la nueva seccion Recetas */
   line-height: 30px;
   margin-top: 24px;
   margin-bottom: 0;
+}
+
+/* Aqui esta el nuevo apartado para Reservation 
+Aqui hago intentos sobre las mezclas, ya que hasta apenas me acorde que 
+tambien se debe cuidar eso.
+
+Voy a seguir intentando y si hay errores poder corregirlos para mantener
+buena semantica*/
+
+.reservation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9e7ff;
+  background-image: url("../images/background_reservation.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.reservation__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.reservation__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 385px;
+}
+
+.form__fieldset {
+  padding: 0;
+  border: none;
+}
+
+.form__label {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__input {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  border: 1px solid #838383;
+
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.form__button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 4px;
+  background-color: #2f80ed;
+  border: none;
+
+  color: #ffffff;
+
+  max-width: 385px;
+  height: 60px;
+}
+
+.form__button:hover {
+  opacity: 70%;
+}
+
+.form__label_position_center {
+  display: flex;
+  gap: 12px;
+  margin: 32px auto 0;
+}
+
+.form__checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
 }
