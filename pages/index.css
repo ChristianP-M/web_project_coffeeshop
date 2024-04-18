@@ -213,9 +213,6 @@ buena semantica*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  padding-top: 100px;
-  padding-bottom: 120px;
 }
 
 .reservation__title {
@@ -224,12 +221,19 @@ buena semantica*/
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
+
+  margin: 100px auto 80px;
+}
+
+.form {
+  max-width: 385px;
 }
 
 .reservation__form {
   display: flex;
   flex-direction: column;
-  max-width: 385px;
+
+  margin-bottom: 120px;
 }
 
 .form__fieldset {
