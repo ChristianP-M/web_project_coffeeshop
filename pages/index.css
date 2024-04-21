@@ -215,6 +215,7 @@ buena semantica*/
   background-size: cover;
 
   padding-top: 100px;
+  z-index: 2;
 }
 
 .reservation__title {
@@ -298,4 +299,82 @@ buena semantica*/
   width: 20px;
   height: 20px;
   border-radius: 2px;
+}
+
+/* Nuevos Estilos del footer  */
+
+.footer {
+  position: relative;
+  box-sizing: border-box;
+  background-color: #0a2850;
+  /* background-image: url("../images/background_header.svg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  color: #ffffff;
+
+  padding: 60px 100px;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 410px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: #2f80ed;
+
+  top: -170px;
+  left: -32px;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.footer__column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-heading {
+  margin-top: 0;
+}
+
+.footer__list {
+  list-style-type: none;
+  padding: 0;
+  margin-left: auto;
+}
+
+.footer__list-item {
+  margin-bottom: 16px;
+}
+
+.footer__column-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.footer__copyright {
+  margin: 100px 0 0 0;
 }
