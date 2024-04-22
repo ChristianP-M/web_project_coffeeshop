@@ -73,11 +73,6 @@
   margin: 0;
 }
 
-/* .header__paragraph_position_left {
-    bottom: 40px;
-    left: 80px;
-  } */
-
 .header__paragraph_position_right {
   align-self: end;
 }
