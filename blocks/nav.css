@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.logo {
+.nav__logo {
   position: relative;
   top: 30px;
   left: 30px;
