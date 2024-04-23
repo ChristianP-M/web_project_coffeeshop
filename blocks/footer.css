@@ -4,6 +4,7 @@
   color: #ffffff;
 
   padding: 60px 80px;
+  overflow: hidden;
 }
 
 .footer__content {
@@ -20,7 +21,6 @@
   top: -128px;
   left: -44px;
   z-index: 1;
-  overflow: hidden;
 }
 
 .footer__logo {
