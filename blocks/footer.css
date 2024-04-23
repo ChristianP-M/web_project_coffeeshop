@@ -20,6 +20,7 @@
   top: -128px;
   left: -44px;
   z-index: 1;
+  overflow: hidden;
 }
 
 .footer__logo {
