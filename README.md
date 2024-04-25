@@ -19,7 +19,7 @@ Increiblemente, hemos estado avanzano con un diseño mucho más avanzado sobre H
 - **Reforzamiento de etiquetas de estilo:** Fuentes, Fondos, Margenes, Posisionamiento, Dirección de Flujo (Flexbox), Pseudoclases y Peusoelementos, etc...
 - **Reforzamiento de Mezclas:** Para el correcto uso de la metodología BEM.
 - **Importacion de estilos de fuentes externas:** Utilizando Google Fonts.
-- **Importación y uso del iframe: ** Donde lo utilizamos para exportar contenido de contenidos externos para el diseño de nuestro Recetario.
+- **Importación y uso del iframe:** Donde lo utilizamos para exportar contenido de contenidos externos para el diseño de nuestro Recetario.
 - **Creación y modificacion de estilos de Formularios:** Donde aprendimos como crear formularios, las diferentes formas de enlazarlo y como poner nuestro propio estilo.
 
 Y por utlimo, aprendimos a tener un mejor uso de Git, ya que como lo hemos estado utilizando constantemente, ha hecho que sea una herramienta mucho más comun en nuestro hambito como desarrolladores.
