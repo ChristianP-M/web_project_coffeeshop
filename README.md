@@ -1,6 +1,7 @@
 # Triple Espresso
 
 **Accede a la vista de este proyecto desde el siguiente enlace!:**
+
 <https://christianp-m.github.io/web_project_coffeeshop/>
 
 ## Descripción del proyecto y su funcionalidad.
